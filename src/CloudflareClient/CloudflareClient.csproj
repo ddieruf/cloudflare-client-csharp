@@ -6,6 +6,10 @@
         <PackageVersion>0.1.0</PackageVersion>
         <Authors>David Dieruf</Authors>
         <RepositoryUrl>https://github.com/ddieruf/cloudflare-client-csharp</RepositoryUrl>
+        <Title>Cloudflare C# Client</Title>
+        <Description>This is a C# .NETStandard client of select endpoints for v4 of the CloudFlare api. It implements User, Zone, LoadBalancer, LoadBalancerMonitor, and LoadBalancerMonitorPools.</Description>
+        <PackageProjectUrl>https://github.com/ddieruf/cloudflare-client-csharp</PackageProjectUrl>
+        <PackageTags>cloudflare</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
