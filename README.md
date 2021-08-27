@@ -1,6 +1,6 @@
 # cloudflare-client-csharp
 
-This is a C# client of the endpoints that I needed for v4 of the [CloudFlare api](https://api.cloudflare.com/).
+This is a C# .NETStandard 2.1 client of the endpoints that I needed for v4 of the [CloudFlare api](https://api.cloudflare.com/).
 
 ## Endpoints Implemented
 
@@ -19,7 +19,7 @@ Load Balancer Monitor ([CloudFlare ref](https://api.cloudflare.com/#load-balance
 To use this library first add it to your C# project
 
 ```bash
-$ dotnet add package xxxxxxx
+$ dotnet add package CloudflareClient
 ```
 
 Set your CloudFlare API credentials. Refer to the [API keys area of the CloudFlare docs](https://api.cloudflare.com/#getting-started-requests) for more info.
