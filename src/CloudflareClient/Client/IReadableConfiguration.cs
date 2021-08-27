@@ -41,13 +41,6 @@ namespace CloudflareClient.Client
         string DateTimeFormat { get; }
 
         /// <summary>
-        /// Gets the default header.
-        /// </summary>
-        /// <value>Default header.</value>
-        [Obsolete("Use DefaultHeaders instead.")]
-        IDictionary<string, string> DefaultHeader { get; }
-
-        /// <summary>
         /// Gets the default headers.
         /// </summary>
         /// <value>Default headers.</value>

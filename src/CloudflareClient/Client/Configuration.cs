@@ -91,7 +91,7 @@ namespace CloudflareClient.Client
         public Configuration(string xAuthEmail, string xAuthKey)
         {
             Proxy = null;
-            UserAgent = "OpenAPI-Generator/1.0.0/csharp";
+            UserAgent = "";
             BasePath = new Uri("https://api.cloudflare.com/client/v4");
             DefaultHeaders = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
@@ -125,7 +125,7 @@ namespace CloudflareClient.Client
             IDictionary<string, string> defaultHeaders = default,
             Uri basePath = default) : this(xAuthEmail, xAuthKey)
         {
-          BasePath = basePath ?? new Uri("https://api.cloudflare.com");
+          BasePath = basePath ?? new Uri("https://api.cloudflare.com/client/v4");
 
           if (defaultHeaders != null)
             foreach (var keyValuePair in defaultHeaders)
@@ -144,22 +144,6 @@ namespace CloudflareClient.Client
         public virtual Uri BasePath {
             get { return _basePath; }
             set { _basePath = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the default header.
-        /// </summary>
-        [Obsolete("Use DefaultHeaders instead.")]
-        public virtual IDictionary<string, string> DefaultHeader
-        {
-            get
-            {
-                return DefaultHeaders;
-            }
-            set
-            {
-                DefaultHeaders = value;
-            }
         }
 
         /// <summary>
