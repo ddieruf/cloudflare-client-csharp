@@ -24,7 +24,7 @@ $ dotnet add package CloudflareClient
 
 Set your CloudFlare API credentials. Refer to the [API keys area of the CloudFlare docs](https://api.cloudflare.com/#getting-started-requests) for more info.
 
-```bash
+```c#
 var _xAuthEmail = "<YOUR_EMAIL>";
 var _xAuthKey = "<YOUR_KEY>";
 ```
